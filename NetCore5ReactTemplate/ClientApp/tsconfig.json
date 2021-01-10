@@ -21,9 +21,13 @@
     ],
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["**/*.tsx", "**/*.ts"],
+  "include": [
+    "**/*.tsx",
+    "**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "src/**/*.js",
