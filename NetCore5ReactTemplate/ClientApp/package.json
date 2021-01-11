@@ -16,10 +16,13 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "reactstrap": "^8.4.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "ts-nameof": "^5.0.0"
   },
   "devDependencies": {
+    "@craco/craco": "^6.0.0",
     "@types/jest": "^26.0.20",
+    "@types/ts-nameof": "4.2.1",
     "@types/material-ui": "0.21.8",
     "@types/node": "^14.14.20",
     "@types/react": "^17.0.0",
@@ -39,16 +42,16 @@
     "eslint-plugin-material-ui": "^1.0.1",
     "eslint-plugin-react": "^7.18.3",
     "nan": "^2.14.1",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "ts-loader": "^8.0.14"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "scripts": {
-    "start": "rimraf ./build && react-scripts start",
-    "build": "react-scripts build",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "start": "rimraf ./build && craco start",
+    "build": "craco build",
+    "test": "cross-env CI=true craco test --env=jsdom",
     "lint": "eslint ./src/"
   },
   "browserslist": {
