@@ -40,7 +40,7 @@ const FetchData: FunctionComponent = () => {
         );
     };
 
-    let contents = loading
+    const contents = loading
        ? <p><em>Loading...</em></p>
        : renderForecastsTable();
 
