@@ -5,3 +5,5 @@ public/
 scripts/
 
 src/registerServiceWorker.js
+
+craco.config.js

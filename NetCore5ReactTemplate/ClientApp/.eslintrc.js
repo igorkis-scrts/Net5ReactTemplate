@@ -43,7 +43,7 @@ module.exports = {
     ],
     rules: {
         "import/extensions": "off",
-        "@typescript-eslint/array-type": ["error", { default: "generic" }],
+        "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
         "prefer-const": [
             "error",
             {
@@ -57,6 +57,7 @@ module.exports = {
         "object-curly-spacing": ["error", "always"],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         "react/prop-types": [0],
         "max-len": [
             "error",
