@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace NetCore5ReactTemplate.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("weather-forecast")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
