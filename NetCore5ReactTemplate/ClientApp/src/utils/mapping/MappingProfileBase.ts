@@ -1,16 +1,16 @@
 export class MappingProfileBase {
-    protected static autoMap<TSource, TDestination>(
-       sourceModel: TSource,
-       destinationModel: TDestination
-    ): TDestination {
+   protected static autoMap<TSource, TDestination>(source: TSource, destination: TDestination): TDestination {
+      let keys = Object.keys(destination);
+      if (keys.length === 0) {
+         keys = Object.keys(source);
+      }
 
-        const destinationPropertyNames = Object.keys(destinationModel);
-        destinationPropertyNames.forEach((propertyName: string) => {
-            if (propertyName in sourceModel) {
-                destinationModel[propertyName] = sourceModel[propertyName];
-            }
-        });
+      keys.forEach((propertyName: string) => {
+         if (propertyName in source) {
+            destination[propertyName] = source[propertyName];
+         }
+      });
 
-        return destinationModel;
-    }
+      return destination;
+   }
 }
