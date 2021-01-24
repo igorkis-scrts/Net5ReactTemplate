@@ -1,4 +1,4 @@
 export const appUrls = {
     rootPath: "/",
-    usersPath: "/users",
+    fetchData: "/fetch-data"
 }

@@ -38,7 +38,7 @@ export class AppThemeColors implements IAppThemeColors {
         };
 
         this.primary = {
-            main: "rgba(250, 66, 36)",
+            main: "rgba(49, 99, 161)",
             hover: "rgba(66, 66, 66)",
             text: "rgba(189, 189, 189, 0.87)",
 
@@ -53,7 +53,7 @@ export class AppThemeColors implements IAppThemeColors {
         };
 
         this.secondary = {
-            main: "rgba(224, 224, 224)",
+            main: "rgba(206, 197, 218)",
             hover: "rgba(213, 213, 213)",
             text: "rgba(0, 0, 0, 0.87)",
 
