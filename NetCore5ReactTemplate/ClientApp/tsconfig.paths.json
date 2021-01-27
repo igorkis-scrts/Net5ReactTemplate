@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "@api/*": ["api/*"],
       "@app/*": ["app/*"],
       "@utils/*": ["utils/*"],
+      "@models/*": ["app/models/*"],
       "@config/*": ["config/*"],
       "@shared/*": ["app/shared/*"],
       "@State": ["config/redux/State"]
